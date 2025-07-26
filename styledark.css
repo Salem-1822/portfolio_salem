@@ -1,0 +1,199 @@
+/* الوضع الليلي */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Header */
+.dark-mode .header {
+  background: #003366 !important;
+  box-shadow: none;
+  border-radius: 20px;
+}
+
+/* Logo */
+.dark-mode .logo {
+  color: #9ecfff !important;
+}
+
+.dark-mode .logo:hover {
+  color: #cce6ff !important;
+  text-shadow: 0 0 15px #99ccff, 0 0 30px #66a3ff;
+}
+
+/* Navbar links */
+.dark-mode .navbar a {
+  color: #cce6ff !important;
+  border-bottom: 1px solid transparent;
+}
+
+.dark-mode .navbar a:hover,
+.dark-mode .navbar a.active:hover {
+  color: white !important;
+  border-bottom: 1px solid #99ccff !important;
+  text-shadow: 0 0 20px #99ccff, 0 0 40px #66a3ff;
+}
+
+/* Contact button */
+.dark-mode .contact {
+  background-color: #00509e !important;
+  color: white !important;
+  border: 2px solid transparent !important;
+}
+
+.dark-mode .contact:hover {
+  background-color: #007bff !important;
+  color: white !important;
+  font-size: 13px;
+}
+
+/* Home Section */
+.dark-mode .home {
+  background-color: #181818 !important;
+}
+
+.dark-mode .home-content h3,
+.dark-mode .home-content h1,
+.dark-mode .home-content p {
+  color: #cce6ff !important;
+}
+
+.dark-mode .btn-1 {
+  background-color: #222 !important;
+  color: #eee !important;
+  border: 2px solid #444 !important;
+}
+
+.dark-mode .btn-1:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid black !important;
+}
+
+.dark-mode .btn-2 {
+  background-color: #004080 !important;
+  color: #cce6ff !important;
+  border: 1px solid #003366 !important;
+}
+
+.dark-mode .btn-2:hover {
+  background-color: white !important;
+  color: #007bff !important;
+}
+
+/* About Section */
+.dark-mode .about {
+  background-color: #001a33 !important;
+}
+
+.dark-mode .about-content h2,
+.dark-mode .about-content h3,
+.dark-mode .about-content p {
+  color: #cce6ff !important;
+}
+
+/* Skills Section */
+.dark-mode .skills-section {
+  background-color: #121212 !important;
+}
+
+.dark-mode .skill-card {
+  background-color: #222 !important;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.8) !important;
+  color: #cce6ff !important;
+}
+
+.dark-mode .skill-card:hover {
+  box-shadow: 0 0 25px rgba(0, 123, 255, 1) !important;
+  transform: translateY(-10px);
+}
+
+/* Inputs and textarea */
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #333 !important;
+  color: #eee !important;
+  border: 1px solid #555 !important;
+}
+
+/* Contact form button */
+.dark-mode #btn {
+  background-color: #004080 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.dark-mode #btn:hover {
+  background-color: #0066cc !important;
+  color: white !important;
+}
+
+/* Footer */
+.dark-mode .footer {
+  background-color: #000 !important;
+  color: #ccc !important;
+}
+
+.dark-mode .footer .social a {
+  color: #99ccff !important;
+  border-color: #00509e !important;
+  box-shadow: inset 0 0 10px #00509e, 0 0 10px #00509e !important;
+}
+
+.dark-mode .footer .social a:hover {
+  color: white !important;
+  border-color: white !important;
+  transform: scale(1.2) translateY(-1px);
+}
+
+.dark-mode .footer ul li a {
+  color: #a3c2f7 !important;
+  border-bottom: 3px solid transparent !important;
+}
+
+.dark-mode .footer ul li a:hover {
+  border-bottom: 1px solid #66a3ff !important;
+  font-size: 15px;
+}
+
+/* Mode button styling in dark mode */
+.dark-mode #mode-btn {
+  background-color: #004080 !important;
+  color: white !important;
+  border: 2px solid #007bff !important;
+}
+
+.dark-mode #mode-btn:hover {
+  background-color: #0059b3 !important;
+  color: white !important;
+}
+.dark-mode #Education {
+    padding: 10% 12%;
+    background-color: #121212 !important;
+    text-align: left;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.dark-mode #Education h2 {
+    font-size: 42px;
+    color: #9ecfff !important;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(153, 204, 255, 0.4);
+}
+
+.dark-mode #Education p {
+    font-size: 18px;
+    color: #e0e0e0 !important;
+    line-height: 1.8;
+    background-color: #1e1e1e !important;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,123,255,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode #Education p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0,123,255,0.4);
+}
