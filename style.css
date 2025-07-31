@@ -218,9 +218,6 @@ img{
     margin: 1rem;
     resize: none;
 }
-.C{
-    color:#007BFF;
-}
 .skills-section {
     padding: 5% 12%;
     background: #f5f5f5;
@@ -265,6 +262,7 @@ img{
     width:100%;
     padding:40px 0;
     background-color: black;
+    
 }
 .footer .social{
     text-align: center;
@@ -343,10 +341,11 @@ img{
 }
 
 #Education h2 {
-    font-size: 42px;
     color: #007BFF;
     margin-bottom: 20px;
     text-shadow: 0 0 10px rgba(0,123,255,0.2);
+    text-align:left;
+    font-size: 62px;
 }
 
 #Education p {
