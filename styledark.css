@@ -214,7 +214,7 @@
     font-size: 0.9rem;
   }
   .dark-mode .home {
-    padding: 100px 8% 40px;
+    padding: 75px 8% 40px;
     flex-wrap: wrap;
     gap: 2rem;
   }
@@ -276,11 +276,11 @@
   }
   .dark-mode .btn-box {
     flex-direction: column;
-    width: 100%;
+    width: 75%;
   }
   .dark-mode .btn-1,
   .dark-mode .btn-2 {
-    width: 100%;
+    width: 75%;
     text-align: center;
     font-size: 16px;
   }
@@ -293,13 +293,13 @@
     font-size: 32px;
   }
   .dark-mode .about-content h2 span {
-    font-size: 44px;
+    font-size: 33px;
   }
   .dark-mode #Education {
     padding: 8% 6%;
   }
   .dark-mode #Education h2 {
-    font-size: 48px;
+    font-size: 33px;
   }
 }
 
@@ -313,17 +313,17 @@
     font-size: 1.4rem;
   }
   .dark-mode .home-content h1 {
-    font-size: 34px;
+    font-size: 24px;
   }
   .dark-mode .home-content h3 {
-    font-size: 18px;
+    font-size: 15px;
   }
   .dark-mode .span {
-    font-size: 38px;
+    font-size: 28px;
   }
   .dark-mode .btn-1,
   .dark-mode .btn-2 {
-    padding: 12px 20px;
+    padding: 10px 15px;
     font-size: 14px;
   }
   .dark-mode .footer ul li a {
