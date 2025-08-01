@@ -197,3 +197,136 @@
     transform: translateY(-5px);
     box-shadow: 0 0 25px rgba(0,123,255,0.4);
 }
+
+
+/* === Responsive for dark mode === */
+
+/* Tablet / small desktop */
+@media (max-width: 1024px) {
+  .dark-mode .header {
+    padding: 18px 8%;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    gap: 8px;
+  }
+  .dark-mode .navbar a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+  .dark-mode .home {
+    padding: 100px 8% 40px;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .dark-mode .home-content h1 {
+    font-size: 48px;
+  }
+  .dark-mode .home-content h3 {
+    font-size: 24px;
+  }
+  .dark-mode .span {
+    font-size: 50px;
+  }
+  .dark-mode .btn-box {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .dark-mode .about {
+    flex-wrap: wrap;
+    padding: 10% 6%;
+    gap: 2rem;
+  }
+  .dark-mode #Education {
+    padding: 8% 10%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .dark-mode .header {
+    padding: 15px 6%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .dark-mode .navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: flex-start;
+  }
+  .dark-mode .navbar a {
+    margin: 4px 8px;
+    font-size: 0.75rem;
+  }
+  .dark-mode .home {
+    flex-direction: column;
+    padding: 120px 6% 30px;
+    gap: 1.5rem;
+  }
+  .dark-mode .home-content h1 {
+    font-size: 42px;
+  }
+  .dark-mode .home-content h3 {
+    font-size: 22px;
+  }
+  .dark-mode .span {
+    font-size: 44px;
+  }
+  .dark-mode .btn-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .dark-mode .btn-1,
+  .dark-mode .btn-2 {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+  .dark-mode .about {
+    flex-direction: column;
+    padding: 10% 5%;
+    gap: 2rem;
+  }
+  .dark-mode .about-content h2 {
+    font-size: 32px;
+  }
+  .dark-mode .about-content h2 span {
+    font-size: 44px;
+  }
+  .dark-mode #Education {
+    padding: 8% 6%;
+  }
+  .dark-mode #Education h2 {
+    font-size: 48px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .dark-mode .navbar a {
+    font-size: 0.65rem;
+    margin: 2px 6px;
+  }
+  .dark-mode .logo {
+    font-size: 1.4rem;
+  }
+  .dark-mode .home-content h1 {
+    font-size: 34px;
+  }
+  .dark-mode .home-content h3 {
+    font-size: 18px;
+  }
+  .dark-mode .span {
+    font-size: 38px;
+  }
+  .dark-mode .btn-1,
+  .dark-mode .btn-2 {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .dark-mode .footer ul li a {
+    font-size: 0.6rem;
+  }
+}
