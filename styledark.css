@@ -198,135 +198,159 @@
     box-shadow: 0 0 25px rgba(0,123,255,0.4);
 }
 
-
 /* === Responsive for dark mode === */
-
-/* Tablet / small desktop */
 @media (max-width: 1024px) {
-  .dark-mode .header {
-    padding: 18px 8%;
-    flex-wrap: wrap;
-    border-radius: 15px;
-    gap: 8px;
-  }
-  .dark-mode .navbar a {
-    margin: 0 10px;
-    font-size: 0.9rem;
-  }
-  .dark-mode .home {
-    padding: 75px 8% 40px;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  .dark-mode .home-content h1 {
-    font-size: 48px;
-  }
-  .dark-mode .home-content h3 {
-    font-size: 24px;
-  }
-  .dark-mode .span {
-    font-size: 50px;
-  }
-  .dark-mode .btn-box {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .dark-mode .about {
-    flex-wrap: wrap;
-    padding: 10% 6%;
-    gap: 2rem;
-  }
-  .dark-mode #Education {
-    padding: 8% 10%;
-  }
+    .dark-mode .header {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .dark-mode .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .dark-mode .navbar a {
+        margin: 0 10px;
+    }
+    .dark-mode .home {
+        padding: 140px 5% 50px;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center;
+    }
+    .dark-mode .about {
+        flex-direction: column;
+        padding: 10% 5%;
+        gap: 3rem;
+        text-align: center;
+    }
+    .dark-mode .about-content h2,
+    .dark-mode .about-content h2 span,
+    .dark-mode .title {
+        text-align: center;
+    }
+    .dark-mode .about-img img {
+        width: 220px;
+    }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
-  .dark-mode .header {
-    padding: 15px 6%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .dark-mode .navbar {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    justify-content: flex-start;
-  }
-  .dark-mode .navbar a {
-    margin: 4px 8px;
-    font-size: 0.75rem;
-  }
-  .dark-mode .home {
-    flex-direction: column;
-    padding: 120px 6% 30px;
-    gap: 1.5rem;
-  }
-  .dark-mode .home-content h1 {
-    font-size: 42px;
-  }
-  .dark-mode .home-content h3 {
-    font-size: 22px;
-  }
-  .dark-mode .span {
-    font-size: 44px;
-  }
-  .dark-mode .btn-box {
-    flex-direction: column;
-    width: 75%;
-  }
-  .dark-mode .btn-1,
-  .dark-mode .btn-2 {
-    width: 75%;
-    text-align: center;
-    font-size: 16px;
-  }
-  .dark-mode .about {
-    flex-direction: column;
-    padding: 10% 5%;
-    gap: 2rem;
-  }
-  .dark-mode .about-content h2 {
-    font-size: 32px;
-  }
-  .dark-mode .about-content h2 span {
-    font-size: 33px;
-  }
-  .dark-mode #Education {
-    padding: 8% 6%;
-  }
-  .dark-mode #Education h2 {
-    font-size: 33px;
-  }
+    .dark-mode .header {
+        padding: 15px 5%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .dark-mode .navbar {
+        width: 100%;
+        justify-content: center;
+        gap: 8px;
+    }
+    .dark-mode .navbar a {
+        margin: 5px;
+        font-size: 14px;
+        padding: 5px;
+    }
+    .dark-mode .contact {
+        margin-top: 5px;
+    }
+    .dark-mode .home {
+        flex-direction: column;
+        padding: 180px 5% 50px; /* Space for stacked header */
+        gap: 2rem;
+        text-align: center;
+    }
+    .dark-mode .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+    .dark-mode .home-content h1 {
+        font-size: 38px;
+    }
+    .dark-mode .span {
+        font-size: 40px;
+    }
+    .dark-mode .home-content h3 {
+        font-size: 24px;
+    }
+    .dark-mode .btn-box {
+        width: 100%;
+        max-width: 300px;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 auto;
+    }
+    .dark-mode .btn-1,
+    .dark-mode .btn-2 {
+        width: 100%;
+        padding: 12px 20px;
+        text-align: center;
+    }
+    .dark-mode .about-img img {
+        width: 200px; 
+    }
+    .dark-mode .about-content h2,
+    .dark-mode .about-content h3 {
+        font-size: 32px;
+    }
+    .dark-mode .about-content h2 span,
+    .dark-mode .title {
+        font-size: 35px;
+    }
+    .dark-mode .about-content p {
+        font-size: 16px;
+    }
+    .dark-mode #Education {
+        padding: 8% 6%;
+    }
+    .dark-mode #Education h2 {
+        font-size: 33px;
+    }
 }
 
-/* Very small phones */
 @media (max-width: 480px) {
-  .dark-mode .navbar a {
-    font-size: 0.65rem;
-    margin: 2px 6px;
-  }
-  .dark-mode .logo {
-    font-size: 1.4rem;
-  }
-  .dark-mode .home-content h1 {
-    font-size: 24px;
-  }
-  .dark-mode .home-content h3 {
-    font-size: 15px;
-  }
-  .dark-mode .span {
-    font-size: 28px;
-  }
-  .dark-mode .btn-1,
-  .dark-mode .btn-2 {
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-  .dark-mode .footer ul li a {
-    font-size: 0.6rem;
-  }
+    .dark-mode .navbar a {
+        font-size: 13px;
+        margin: 2px 4px;
+    }
+    .dark-mode .logo {
+        font-size: 22px;
+    }
+    .dark-mode .home-content h1 {
+        font-size: 30px;
+    }
+    .dark-mode .span {
+        font-size: 32px;
+    }
+    .dark-mode .home-content h3 {
+        font-size: 20px;
+    }
+    .dark-mode .about-content h2,
+    .dark-mode .about-content h3 {
+        font-size: 28px;
+    }
+    .dark-mode .about-content h2 span,
+    .dark-mode .title {
+        font-size: 30px;
+    }
+    .dark-mode .about-img img {
+        width: 160px;
+    }
+    .dark-mode .btn-1,
+    .dark-mode .btn-2 {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .dark-mode .footer ul li a {
+        font-size: 0.6rem;
+    }
+    .dark-mode .contact-form form .input-box input,
+    .dark-mode .contact-form form textarea {
+        font-size: 14px;
+    }
 }
