@@ -383,3 +383,134 @@ img{
     box-shadow: 0 0 25px rgba(0,123,255,0.3);
 }
 
+
+/* === Responsive for Light Mode Only === */
+@media (max-width: 1024px) {
+    body:not(.dark-mode) .header {
+        padding: 18px 8%;
+        flex-wrap: wrap;
+        border-radius: 15px;
+        gap: 8px;
+    }
+    body:not(.dark-mode) .navbar a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+    body:not(.dark-mode) .home {
+        padding: 75px 8% 40px;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    body:not(.dark-mode) .home-content h1 {
+        font-size: 48px;
+    }
+    body:not(.dark-mode) .home-content h3 {
+        font-size: 24px;
+    }
+    body:not(.dark-mode) .span {
+        font-size: 50px;
+    }
+    body:not(.dark-mode) .btn-box {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    body:not(.dark-mode) .about {
+        flex-wrap: wrap;
+        padding: 10% 6%;
+        gap: 2rem;
+    }
+    body:not(.dark-mode) #Education {
+        padding: 8% 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    body:not(.dark-mode) .header {
+        padding: 15px 6%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    body:not(.dark-mode) .navbar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: flex-start;
+    }
+    body:not(.dark-mode) .navbar a {
+        margin: 4px 8px;
+        font-size: 0.75rem;
+    }
+    body:not(.dark-mode) .home {
+        flex-direction: column;
+        padding: 120px 6% 30px;
+        gap: 1.5rem;
+    }
+    body:not(.dark-mode) .home-content h1 {
+        font-size: 42px;
+    }
+    body:not(.dark-mode) .home-content h3 {
+        font-size: 22px;
+    }
+    body:not(.dark-mode) .span {
+        font-size: 44px;
+    }
+    body:not(.dark-mode) .btn-box {
+        flex-direction: column;
+        width: 75%;
+    }
+    body:not(.dark-mode) .btn-1,
+    body:not(.dark-mode) .btn-2 {
+        width: 75%;
+        text-align: center;
+        font-size: 16px;
+    }
+    body:not(.dark-mode) .about {
+        flex-direction: column;
+        padding: 10% 5%;
+        gap: 2rem;
+    }
+    body:not(.dark-mode) .about-content h2 {
+        font-size: 32px;
+    }
+    body:not(.dark-mode) .about-content h2 span {
+        font-size: 33px;
+    }
+    body:not(.dark-mode) .title {
+        font-size: 33px;
+    }
+    body:not(.dark-mode) #Education {
+        padding: 8% 6%;
+    }
+    body:not(.dark-mode) #Education h2 {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 480px) {
+    body:not(.dark-mode) .navbar a {
+        font-size: 0.65rem;
+        margin: 2px 6px;
+    }
+    body:not(.dark-mode) .logo {
+        font-size: 1.4rem;
+    }
+    body:not(.dark-mode) .home-content h1 {
+        font-size: 24px;
+    }
+    body:not(.dark-mode) .home-content h3 {
+        font-size: 15px;
+    }
+    body:not(.dark-mode) .span {
+        font-size: 28px;
+    }
+    body:not(.dark-mode) .btn-1,
+    body:not(.dark-mode) .btn-2 {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    body:not(.dark-mode) .footer ul li a {
+        font-size: 0.6rem;
+    }
+}
