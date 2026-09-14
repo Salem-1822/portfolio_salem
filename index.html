@@ -26,7 +26,7 @@
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hi</h3>
-            <h1>I'm<span class="span">salem</span>a full stack Developer</h1>
+            <h1>I'm   <span class="span">salem</span>  a full stack Developer</h1>
             <div class="btn-box">
                 <button class="btn-1">Hire me</button>
                 <button class="btn-2">Experience</button>
@@ -98,18 +98,19 @@
 
 
     <section class="contact-form" id="contact">
-        <form action="#" method="post">
+        <form id="contactForm">
             <h2 class="contact-me">Contact <span class="C">Me</span></h2>
             <div class="input-box">
-                <input type="text" id="fullname" name="" placeholder="FullName" required>
-                <input type="email" id="email" name="" placeholder="email" required>
+                <input type="text" id="fullname" name="fullname" placeholder="FullName" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="input-box">
-                <input type="number" id="nbrTle" name="" placeholder="Phone Number" required>
-                <input type="text" id="Subject" name="" placeholder="Subject" required>
+                <input type="tel" id="nbrTle" name="phone" placeholder="Phone Number" required>
+                <input type="text" id="Subject" name="subject" placeholder="Subject" required>
             </div>
-            <textarea name="" id="" cols="" rows="" placeholder="Your Message"></textarea>
-            <button class="btn-1" id="btn">Send Message</button>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-1" id="btn">Send Message</button>
+            <div id="form-status" style="display: none; margin-top: 15px; font-size: 18px; font-weight: 600;"></div>
         </form>
     </section>
 
@@ -141,15 +142,54 @@
         <p class="copyright">¤ 2025 Salem | All rights Reserved </p>
     </footer>
     <script>
-      const btn = document.querySelector('#mode-btn');
-      btn.onclick = () => {
+      const modeBtn = document.querySelector('#mode-btn');
+      modeBtn.onclick = () => {
       document.body.classList.toggle('dark-mode');
           if (document.body.classList.contains('dark-mode')) {
-              btn.textContent = '☀️ Mode Clair';
+              modeBtn.textContent = '☀️ Mode Clair';
           } else {
-              btn.textContent = '🌙 Mode Sombre';
+              modeBtn.textContent = '🌙 Mode Sombre';
           }
       };
+
+      // Contact form handler
+      const contactForm = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('btn');
+      const formStatus = document.getElementById('form-status');
+
+      contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Disable button and change text to prevent double clicks
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+          submitBtn.style.opacity = '0.7';
+          submitBtn.style.cursor = 'not-allowed';
+          
+          formStatus.style.display = 'none';
+          
+          // Simulate network request since there is no backend
+          setTimeout(() => {
+              // Reset button
+              submitBtn.disabled = false;
+              submitBtn.textContent = 'Send Message';
+              submitBtn.style.opacity = '1';
+              submitBtn.style.cursor = 'pointer';
+              
+              // Success state
+              formStatus.style.display = 'block';
+              formStatus.style.color = '#28a745'; // Green color for success
+              formStatus.textContent = 'Message sent successfully!';
+              
+              // Clear form
+              contactForm.reset();
+              
+              // Hide message after 5 seconds
+              setTimeout(() => {
+                  formStatus.style.display = 'none';
+              }, 5000);
+          }, 1500); // 1.5 seconds delay
+      });
   </script>
 </body>
 </html>

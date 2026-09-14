@@ -201,22 +201,40 @@ img{
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3em;
+    padding: 0 15px; /* Add some padding for mobile screens */
 }
 .contact-form form .input-box{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 1rem; /* Use gap for spacing instead of large margins */
+    margin-bottom: 1rem;
 }
 .contact-form form .input-box input,
 .contact-form form textarea{
-    width: 75%;
+    width: 100%;
+    max-width: 75%;
     padding: 1em;
-    font-size: 18px;
+    font-size: 16px; /* Slightly smaller for better mobile reading */
     color: black;
     background: white;
     border-radius: .8rem;
-    margin: 1rem;
+    border: 1px solid #ccc; /* Add subtle border for better visibility */
     resize: none;
+}
+.contact-form form .input-box input {
+    margin: 0; /* Margin handled by gap */
+}
+.contact-form form textarea {
+    margin: 0 auto 1rem;
+    max-width: 75%;
+}
+
+@media (max-width: 768px) {
+    .contact-form form .input-box input,
+    .contact-form form textarea {
+        max-width: 100%;
+    }
 }
 .C{
     color:#007BFF;
