@@ -162,13 +162,40 @@
           
           // Disable button and change text to prevent double clicks
           submitBtn.disabled = true;
-          submitBtn.textContent = 'Sending...';
+          submitBtn.textContent = 'Opening WhatsApp...';
           submitBtn.style.opacity = '0.7';
           submitBtn.style.cursor = 'not-allowed';
           
           formStatus.style.display = 'none';
-          
-          // Simulate network request since there is no backend
+
+          // Get form values
+          const name = document.getElementById('fullname').value;
+          const email = document.getElementById('email').value;
+          const phone = document.getElementById('nbrTle').value;
+          const subject = document.getElementById('Subject').value;
+          const message = document.getElementById('message').value;
+
+          // Build WhatsApp message
+          const waMessage = `*New Contact Message*
+
+*Name:* ${name}
+*Email:* ${email}
+*Phone:* ${phone}
+*Subject:* ${subject}
+
+*Message:*
+${message}`;
+
+          // URL encode the message
+          const encodedMessage = encodeURIComponent(waMessage);
+
+          // WhatsApp number (Morocco, no leading 0)
+          const waNumber = '212626636802';
+
+          // Create WhatsApp URL
+          const waUrl = `https://wa.me/${waNumber}?text=${encodedMessage}`;
+
+          // Simulate slight delay for better UX before opening WhatsApp
           setTimeout(() => {
               // Reset button
               submitBtn.disabled = false;
@@ -176,19 +203,12 @@
               submitBtn.style.opacity = '1';
               submitBtn.style.cursor = 'pointer';
               
-              // Success state
-              formStatus.style.display = 'block';
-              formStatus.style.color = '#28a745'; // Green color for success
-              formStatus.textContent = 'Message sent successfully!';
-              
               // Clear form
               contactForm.reset();
               
-              // Hide message after 5 seconds
-              setTimeout(() => {
-                  formStatus.style.display = 'none';
-              }, 5000);
-          }, 1500); // 1.5 seconds delay
+              // Open WhatsApp in a new tab
+              window.open(waUrl, '_blank');
+          }, 1000);
       });
   </script>
 </body>
